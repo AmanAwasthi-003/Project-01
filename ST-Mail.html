@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ST-Mail</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: white;
+      color: black;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 50px auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .logo-section {
+      flex: 1 1 300px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .logo-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .info-section {
+      flex: 2 1 600px;
+      padding: 30px;
+    }
+
+    .info-section h1 {
+      color: blue;
+      margin-bottom: 20px;
+    }
+
+    .info-section p, .info-section ul {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .info-section ul {
+      padding-left: 20px;
+    }
+
+    .download-btn {
+      margin-top: 30px;
+      display: inline-block;
+      background-color: blue;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: blue;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-section">
+        <img src="ST-Mail.jpeg" alt="ST-Mail Logo">
+      </div>
+      <div class="info-section">
+        <h1>ST-Mail : Smart, Secure, and Speedy Emailing</h1>
+        <p>
+          ST-Mail is a modern email client developed by SoftTech, offering a fast, secure, and intuitive communication experience for both personal and professional users. Built with productivity in mind, ST-Mail simplifies your inbox while boosting your email management efficiency.
+        </p>
+        <p>Key features of ST-Mail include:</p>
+        <ul>
+          <li>Unified inbox for multiple email accounts</li>
+          <li>Advanced spam filtering and encryption for privacy</li>
+          <li>Smart folders, labels, and AI-based sorting</li>
+          <li>Integrated calendar and task reminders</li>
+          <li>Offline mode with automatic sync when online</li>
+          <li>Available on desktop, web, and mobile devices</li>
+        </ul>
+        <p>
+          Whether you're a business professional, student, or freelancer, ST-Mail keeps you connected, organized, and secure. Experience hassle-free communication, powered by SoftTech innovation.
+        </p>
+        <button class="download-btn" onclick="downloadSTMail()">Download ST-Mail</button>
+      </div>
+    </div>
+    
+    <script>
+    function downloadSTMail() {
+      alert("ST-Mail downloaded successfully");
+    }
+    </script>
+
+  </body>
+</html>

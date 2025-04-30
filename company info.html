@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Company Info</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: white;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header img {
+      width: 500px;
+      height: auto;
+    }
+
+    h1 {
+      color: blue;
+      margin-top: 10px;
+    }
+
+    .company-description {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      font-size: 18px;
+      color: grey;
+      text-align: center;
+    }
+
+    .founders-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .founder-box {
+      background-color: white;
+      border: 1px solid silver;
+      border-radius: 10px;
+      padding: 20px;
+      width: 280px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .founder-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .founder-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .founder-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: blue;
+      margin-bottom: 10px;
+    }
+
+    .founder-info {
+      font-size: 16px;
+      color: grey;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="ST Logo.jpeg" alt="SoftTech Logo">
+      <h1>Welcome to SoftTech</h1>
+    </header>
+    
+    <div class="company-description">
+      <p>
+        SoftTech is a leading innovator in software development and digital solutions, empowering businesses through advanced technology.
+        Founded in 2025, our mission is to deliver reliable, scalable, and intelligent software solutions across various domains including AI, data analytics, and web development.
+      </p>
+    </div>
+    
+    <div class="founders-container">
+      <div class="founder-box">
+        <img src="Prithvi.jpeg" alt="Founder 1" class="founder-photo">
+        <div class="founder-name">Prithvi Agrawal</div>
+        <div class="founder-info">
+          Prithvi is the CEO and co-founder of SoftTech. With over 10 years of experience in software architecture, he drives innovation and growth with a focus on AI and cloud solutions.
+        </div>
+      </div>
+
+      <div class="founder-box">
+        <img src="Aman.jpg" alt="Founder 2" class="founder-photo">
+        <div class="founder-name">Aman Awasthi</div>
+        <div class="founder-info">
+          Aman, co-founder and CTO, is a passionate technologist. He specializes in UI/UX design, machine learning, and product strategy, leading SoftTech’s technical vision.
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

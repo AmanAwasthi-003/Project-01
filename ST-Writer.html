@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ST-Writer</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: white;
+      color: black;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 50px auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .logo-section {
+      flex: 1 1 300px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .logo-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .info-section {
+      flex: 2 1 600px;
+      padding: 30px;
+    }
+
+    .info-section h1 {
+      color: blue;
+      margin-bottom: 20px;
+    }
+
+    .info-section p, .info-section ul {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .info-section ul {
+      padding-left: 20px;
+    }
+
+    .download-btn {
+      margin-top: 30px;
+      display: inline-block;
+      background-color: blue;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: blue;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-section">
+        <img src="ST-Writer.jpeg" alt="ST-Writer Logo">
+      </div>
+      <div class="info-section">
+        <h1>ST-Writer : Redefining Document Editing</h1>
+        <p>
+          ST-Writer is a powerful, intuitive, and smart document editing software developed by SoftTech to streamline the way you write and collaborate. Whether you're creating simple notes or drafting professional reports, ST-Writer is designed for productivity and creativity.
+        </p>
+        <p>Key features of ST-Writer include:</p>
+        <ul>
+          <li>Real-time collaboration and cloud syncing</li>
+          <li>AI-assisted grammar and style suggestions</li>
+          <li>Support for rich media embedding (images, tables, charts)</li>
+          <li>Custom templates and formatting tools</li>
+          <li>Offline editing with seamless autosave</li>
+          <li>Cross-platform availability (web, desktop, mobile)</li>
+        </ul>
+        <p>
+          From students and writers to corporate teams, ST-Writer empowers users with a distraction-free, efficient, and modern editing environment. Experience the future of documents—fast, beautiful, and connected.
+        </p>
+        <button class="download-btn" onclick="downloadApp()">Download ST-Writer</button>
+      </div>
+    </div>
+    
+    <script>
+    function downloadApp() {
+      alert("ST-Writer downloaded successfully");
+      // Simulate a download here if needed
+    }
+    </script>
+
+  </body>
+</html>

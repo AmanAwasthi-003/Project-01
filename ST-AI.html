@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ST-AI</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: white;
+      color: black;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 50px auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .logo-section {
+      flex: 1 1 300px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .logo-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .info-section {
+      flex: 2 1 600px;
+      padding: 30px;
+    }
+
+    .info-section h1 {
+      color: blue;
+      margin-bottom: 20px;
+    }
+
+    .info-section p, .info-section ul {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .info-section ul {
+      padding-left: 20px;
+    }
+
+    .download-btn {
+      margin-top: 30px;
+      display: inline-block;
+      background-color: blue;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: blue;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-section">
+        <img src="ST-AI.jpeg" alt="ST-AI Logo">
+      </div>
+      <div class="info-section">
+        <h1>ST-AI : Artificial Intelligence to Transform the Future</h1>
+        <p>
+          ST-AI is SoftTech's groundbreaking artificial intelligence platform designed to empower businesses and individuals to make smarter, data-driven decisions. With advanced machine learning models, ST-AI adapts to various applications from predictive analytics to natural language processing (NLP).
+        </p>
+        <p>Key features of ST-AI include:</p>
+        <ul>
+          <li>Advanced machine learning algorithms for predictive analytics</li>
+          <li>Natural Language Processing (NLP) for better human-computer interaction</li>
+          <li>Real-time data analysis and decision-making capabilities</li>
+          <li>AI-powered automation tools for increased efficiency</li>
+          <li>Customizable AI solutions tailored to your business needs</li>
+          <li>Scalable platform suitable for enterprises and small businesses</li>
+        </ul>
+        <p>
+          Whether you're looking to enhance customer experience, optimize business operations, or explore AI-powered innovations, ST-AI provides you with the tools to lead in a rapidly evolving technological landscape.
+        </p>
+        <button class="download-btn" onclick="downloadSTAI()">Download ST-AI</button>
+      </div>
+    </div>
+    
+    <script>
+    function downloadSTAI() {
+      alert("ST-AI downloaded successfully");
+    }
+    </script>
+
+  </body>
+</html>

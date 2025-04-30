@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ST-Presentation</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: white;
+      color: black;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 50px auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .logo-section {
+      flex: 1 1 300px;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .logo-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .info-section {
+      flex: 2 1 600px;
+      padding: 30px;
+    }
+
+    .info-section h1 {
+      color: orange;
+      margin-bottom: 20px;
+    }
+
+    .info-section p, .info-section ul {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .info-section ul {
+      padding-left: 20px;
+    }
+
+    .download-btn {
+      margin-top: 30px;
+      display: inline-block;
+      background-color: orange;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: orange;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-section">
+        <img src="ST-Presentation.jpeg" alt="ST-Presentation Logo">
+      </div>
+      <div class="info-section">
+        <h1>ST-Presentation : Design Powerful Slides with Ease</h1>
+        <p>
+          ST-Presentation is SoftTech’s cutting-edge presentation software that empowers users to create visually stunning and professionally polished slides in minutes. Designed for business professionals, educators, and creatives, ST-Presentation blends simplicity with powerful features.
+        </p>
+        <p>Key features of ST-Presentation include:</p>
+        <ul>
+          <li>Drag-and-drop slide builder with pre-made templates</li>
+          <li>Built-in animation effects and transitions</li>
+          <li>Real-time collaboration and presenter mode</li>
+          <li>Media integration: audio, video, charts, and more</li>
+          <li>Export to PDF, PPTX, or share via link</li>
+          <li>Works seamlessly on desktop, tablet, and web</li>
+        </ul>
+        <p>
+          Whether you're pitching an idea, delivering a lecture, or designing a portfolio, ST-Presentation makes it easy and impactful. Present your ideas with confidence — the SoftTech way.
+        </p>
+        <button class="download-btn" onclick="downloadPresentation()">Download ST-Presentation</button>
+      </div>
+    </div>
+    
+    <script>
+    function downloadPresentation() {
+      alert("ST-Presentation downloaded successfully");
+    }
+    </script>
+
+  </body>
+</html>

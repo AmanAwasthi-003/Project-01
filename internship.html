@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Internship Application</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 30px 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      font-weight: bold;
+      font-size: 20px;
+      color: lightslategray;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid silver;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .gender-options,
+    .internship-options {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+
+    .center-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: blue;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Internship Application Form</h2>
+      <form id="internshipForm" onsubmit="return validateForm()">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name">
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob">
+
+      <label>Gender:</label>
+      <div class="gender-options">
+        <label><input type="radio" name="gender" value="Male"> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+        <label><input type="radio" name="gender" value="Other"> Other</label>
+      </div>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email">
+
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile">
+
+      <label for="address">Address:</label>
+      <input type="text" id="address">
+
+      <label for="qualification">Educational Qualification:</label>
+      <select id="qualification">
+        <option value="">Select</option>
+        <option value="BTech">B.Tech</option>
+        <option value="MTech">M.Tech</option>
+        <option value="PhD">Ph.D</option>
+      </select>
+
+      <label for="year">Year of Study:</label>
+      <select id="year">
+        <option value="">Select</option>
+        <option value="1st">1st</option>
+        <option value="2nd">2nd</option>
+        <option value="3rd">3rd</option>
+        <option value="4th">4th</option>
+      </select>
+
+      <label for="college">College Name:</label>
+      <input type="text" id="college">
+
+      <label for="languages">Programming Languages Known:</label>
+      <input type="text" id="languages">
+
+      <label>Internship Position:</label>
+      <div class="internship-options">
+        <label><input type="radio" name="position" value="Frontend Developer"> Frontend Developer</label>
+        <label><input type="radio" name="position" value="Backend Developer"> Backend Developer</label>
+        <label><input type="radio" name="position" value="Database Administrator"> Database Administrator</label>
+        <label><input type="radio" name="position" value="UI/UX Designer"> UI/UX Designer</label>
+      </div>
+
+      <label for="about">Tell us about yourself:</label>
+      <textarea id="about" rows="4"></textarea>
+
+      <div class="center-button">
+        <button type="submit">Submit Application</button>
+      </div>
+      </form>
+    </div>
+    
+    <script>
+    function validateForm() {
+      const fields = [
+        { id: "name", name: "Full Name" },
+        { id: "dob", name: "Date of Birth" },
+        { id: "email", name: "Email" },
+        { id: "mobile", name: "Mobile Number" },
+        { id: "address", name: "Address" },
+        { id: "qualification", name: "Qualification" },
+        { id: "year", name: "Year of Study" },
+        { id: "college", name: "College Name" },
+        { id: "languages", name: "Programming Languages" },
+        { id: "about", name: "About Yourself" }
+      ];
+      for (let field of fields) {
+        if (!document.getElementById(field.id).value.trim()) {
+          alert(`Please fill in ${field.name}`);
+          return false;
+        }
+      }
+      const genderChecked = document.querySelector('input[name="gender"]:checked');
+      const positionChecked = document.querySelector('input[name="position"]:checked');
+      if (!genderChecked) {
+        alert("Please select a gender");
+        return false;
+      }
+
+      if (!positionChecked) {
+        alert("Please select an internship position");
+        return false;
+      }
+
+      alert("Your application has been submitted successfully");
+      return false; // Prevent actual form submission
+    }
+    </script>
+
+  </body>
+</html>

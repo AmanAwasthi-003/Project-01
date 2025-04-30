@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .signin-box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-weight: bold;
+      font-size: 18px;
+      color: lightslategray;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .actions span {
+      font-size: 12px;
+      color: lightskyblue;
+      cursor: pointer;
+    }
+
+    button {
+      padding: 8px 16px;
+      background-color: lightskyblue;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: blue;
+    }
+
+    #password-container {
+      display: none;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="signin-box">
+      <h2>Sign in</h2>
+      <div id="email-container">
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <div class="actions">
+          <span onclick="goToCreateAccount()">No account? Create one</span>
+          <button onclick="showPasswordBox()">Next</button>
+        </div>
+      </div>
+      <div id="password-container">
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <div class="actions">
+          <span onclick="forgotPassword()">Forgot password?</span>
+          <button onclick="submitSignIn()">Submit</button>
+        </div>
+      </div>
+    </div>
+    <script>
+    function showPasswordBox() {
+      const email = document.getElementById("email").value;
+      if (!email) {
+        alert("Please enter your email first.");
+       return;
+      }
+      document.getElementById("email-container").style.display = "none";
+      document.getElementById("password-container").style.display = "block";
+    }
+
+    function submitSignIn() {
+      const password = document.getElementById("password").value;
+      if (!password) {
+        alert("Please enter your password.");
+        return;
+      }
+      alert("Sign in successful");
+    }
+
+    function forgotPassword() {
+      alert("Verification link sent to your email");
+    }
+
+    function goToCreateAccount() {
+      window.location.href = "create account.html"; // This will open the new page
+    }
+    </script>
+
+  </body>
+</html>

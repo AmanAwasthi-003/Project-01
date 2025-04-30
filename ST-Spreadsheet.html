@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ST-Spreadsheet</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: white;
+      color: black;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 50px auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .logo-section {
+      flex: 1 1 300px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .logo-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .info-section {
+      flex: 2 1 600px;
+      padding: 30px;
+    }
+
+    .info-section h1 {
+      color: lightslategray;
+      margin-bottom: 20px;
+    }
+
+    .info-section p, .info-section ul {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .info-section ul {
+      padding-left: 20px;
+    }
+
+    .download-btn {
+      margin-top: 30px;
+      display: inline-block;
+      background-color: lightslategray;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: lightslategray;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-section">
+        <img src="ST-Spreadsheet.jpeg" alt="ST-Spreadsheet Logo">
+      </div>
+      <div class="info-section">
+        <h1>ST-Spreadsheet : Smart, Fast & Collaborative</h1>
+        <p>
+          ST-Spreadsheet is SoftTech’s advanced spreadsheet software that brings together speed, intelligence, and teamwork. Built for data-driven decision makers, analysts, and professionals, ST-Spreadsheet redefines how spreadsheets are created, analyzed, and shared.
+        </p>
+        <p>Key features of ST-Spreadsheet include:</p>
+        <ul>
+          <li>AI-powered formula suggestions and smart autofill</li>
+          <li>Real-time collaboration and cloud storage integration</li>
+          <li>Interactive charts and data visualization tools</li>
+          <li>Built-in templates for budgeting, planning, analysis, and more</li>
+          <li>Seamless import/export with Excel and CSV support</li>
+          <li>Cross-platform access on desktop, mobile, and web</li>
+        </ul>
+        <p>
+          Whether you're crunching numbers or building dashboards, ST-Spreadsheet gives you the tools and flexibility to work smarter. Join the future of spreadsheet innovation with SoftTech.
+        </p>
+        <button class="download-btn" onclick="downloadSTSpreadsheet()">Download ST-Spreadsheet</button>
+      </div>
+    </div>
+    
+    <script>
+    function downloadSTSpreadsheet() {
+      alert("ST-Spreadsheet downloaded successfully");
+    }
+    </script>
+
+  </body>
+</html>
